@@ -79,8 +79,10 @@ body {
 }
 
 .foto-perfil {
-    width: 350px;
-    height: 350px;
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border-radius: 50%;
     border: 2px solid var(--vidro);
@@ -438,5 +440,29 @@ footer {
     100% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        gap: 1rem; 
+        font-size: 0.9rem;
+    }
+    
+    .navegacao {
+        padding: 1rem;
+    }
+
+    .sobre-texto-col {
+        font-size: 1.2rem; 
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem; 
+    }
+
+    .sobre-title, .projeto-title, .contatos-title {
+        font-size: 2rem;
     }
 }
